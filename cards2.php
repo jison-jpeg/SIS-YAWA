@@ -8,7 +8,7 @@ $result = mysqli_query($conn, "SELECT * FROM students");
 // Count total number of students
 $total_students = mysqli_num_rows($result);
 ?>
-
+sahdvjhahsdjasdasad
 <!-- Sales Card -->
 <div class="col-xxl-4 col-md-6">
     <div class="card info-card sales-card" id="dash-pending">
