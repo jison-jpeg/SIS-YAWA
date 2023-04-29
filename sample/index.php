@@ -2,6 +2,12 @@
 <html>
 <head>
 	<title>Student Information</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<style>
+		.action {
+			display: none;
+		}
+	</style>
 </head>
 <body>
 	<h1>Student Information</h1>
@@ -10,7 +16,7 @@
 			<th>ID</th>
 			<th>Name</th>
 			<th>Age</th>
-			<th>Action</th>
+			<th class="action">Action</th>
 		</tr>
 		<?php
 		// Connect to database
@@ -25,7 +31,7 @@
 			echo "<td>" . $row['id'] . "</td>";
 			echo "<td>" . $row['name'] . "</td>";
 			echo "<td>" . $row['age'] . "</td>";
-			echo "<td><a href='edit.php?id=" . $row['id'] . "'>Edit</a> | <a href='delete_.php?id=" . $row['id'] . "' onclick='return confirm(\"Are you sure?\")'>Delete</a></td>";
+			echo "<td class='action'><a href='edit.php?id=" . $row['id'] . "'>Edit</a> | <a href='delete_.php?id=" . $row['id'] . "' onclick='return confirm(\"Are you sure?\")'>Delete</a></td>";
 			echo "</tr>";
 		}
 
@@ -43,5 +49,7 @@
 		?>
 	</table>
 	<p><a href="add.php">Add Student</a></p>
+	<button id="update-button">Update</button>
+	
 </body>
 </html>

@@ -6,12 +6,7 @@
       <th scope="col">Student</th>
       <th scope="col">Age</th>
       <th scope="col">Action</th>
-      <!-- <th scope="col">#ID</th>
-      <th scope="col">Student</th>
-      <th scope="col">College</th>
-      <th scope="col">Course</th>
-      <th scope="col">Status</th>
-      <th scope="col">Year</th> -->
+
     </tr>
   </thead>
   
@@ -37,7 +32,7 @@
 			echo "<td>" . $row['id'] . "</td>";
 			echo "<td>" . $row['name'] . "</td>";
 			echo "<td>" . $row['age'] . "</td>";
-			echo "<td><a href='edit_stud.php?id=" . $row['id'] . "'>Edit</a> | <a href='delete_stud.php?id=" . $row['id'] . "' onclick='return confirm(\"Are you sure?\")'>Delete</a></td>";
+			echo "<td><a href='edit.php?id=" . $row['id'] . "'>Edit</a> | <a href='delete_stud.php?id=" . $row['id'] . "' onclick='return confirm(\"Are you sure?\")'>Delete</a></td>";
 			echo "</tr>";
 		}
 

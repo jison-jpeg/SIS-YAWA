@@ -36,13 +36,11 @@ include "sidebar.php";
                   include "add_stud.php";
                   ?>
                   
-                  <a href="students.html" class="btn btn-primary rounded-pill">Edit</a>
-                  <a href="students.html" class="btn btn-primary rounded-pill">Delete</a>
-                  <div class="box">
-                    <form name="search">
-                        <input type="text" class="input" name="txt" onmouseenter="this.placeholder = 'Search User ID';" onmouseout="this.value = '';">
-                    <i class="ri-search-line"></i>
-                </div>
+                  <button type="button" class="btn btn-primary rounded-pill" id="update-btn">
+                  Update
+                  </button>
+
+                  <!-- <a href="students.html" class="btn btn-primary rounded-pill">Update</a> -->
                 </div>
 
                 <div class="card-body">
@@ -94,7 +92,10 @@ include "sidebar.php";
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
 
 </body>
 
 </html>
+
+
