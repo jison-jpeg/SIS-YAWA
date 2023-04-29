@@ -275,14 +275,14 @@ h6 {
   border: none;
   border-radius: 5px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out; */
 
 }
 
-.card:hover {
+/* .card:hover {
   transform: translate3D(0, -10px, 0);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+} */
 
 
 .card-header,
@@ -930,15 +930,43 @@ h6 {
 }
 .dashboard #main-dash  {
   background-color: #b7d4ff;
+  transition: all 0.3s ease-in-out;
+
 }
+#main-dash:hover {
+  transform: translate3D(0, -10px, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
 .dashboard #dash-pending {
   background-color: #f4e4b8;
+  transition: all 0.3s ease-in-out;
 }
+
+#dash-pending:hover {
+  transform: translate3D(0, -10px, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 .dashboard #dash-approved {
   background-color: #c0fcbe;
+  transition: all 0.3s ease-in-out;
+  
 }
+#dash-approved:hover {
+  transform: translate3D(0, -10px, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 .dashboard #dash-rejected {
   background-color: #ffdddd;
+  transition: all 0.3s ease-in-out;
+
+}
+#dash-rejected:hover {
+  transform: translate3D(0, -10px, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .dashboard .info-card h6 {
